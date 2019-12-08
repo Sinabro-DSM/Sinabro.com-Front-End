@@ -4,7 +4,7 @@ body{
     height: 100vh;
 }
 
-#asideContainer
+#asideNavContainer
 {
     width: 260px;
     height: 100vh;
@@ -36,7 +36,13 @@ body{
     margin: 0px 0px 40px 0px;
 }
 
-.clubActiveList > li
+.clubActiveList > a
+{
+    text-decoration: none;
+    color: rgba(174, 174, 255, 0.767);
+}
+
+.clubActiveList > a > li
 {
     margin-top: 5px;
     width : 238px;
@@ -46,7 +52,7 @@ body{
     font-size: 14px;
 }
 
-.clubActiveList > li:hover
+.clubActiveList > a > li:hover
 {
     background-color: rgba(60, 53, 255, 0.466);
     color:rgba(234, 234, 242, 0.932);
