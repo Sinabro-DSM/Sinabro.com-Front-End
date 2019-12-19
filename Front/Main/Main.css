@@ -26,9 +26,15 @@
     justify-content: center;
     color: #E4E4E4;
 }
-#main_header_category_wrap > li {
+
+a {
+    text-decoration: none;
+}
+
+#main_header_category_wrap > a > li {
     margin-left: 16px;
     cursor: pointer;
+    color: #E4E4E4;
 }
 #main_screen_dot_wrap > ul {
     display: flex;
