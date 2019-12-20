@@ -114,6 +114,12 @@ header > hr
     color:rgba(234, 234, 242, 0.932);
 }
 
+.clubActiveList > a > li.on
+{
+    background-color: rgba(60, 53, 255, 0.466);
+    color:rgba(234, 234, 242, 0.932);
+}
+
 .clubActiveList > h3
 {
     margin: 5px 0px 15px 0px;
