@@ -18,18 +18,40 @@ const studyFrame = (title, content, uploadData) => {
 document.getElementById("studySection").insertAdjacentHTML("beforeend", studyFrame());
 
 
-{/* <style>
-a.active-color { color:#000; }
-</style> */}
+const listIndex = document.getElementsByClassName("list");
 
-// $("li").click(function() {
-//     toggleClass(".active-color");
-// });
+for(let i=0; i<listIndex.length; i++)
+{
+  listIndex[i].addEventListener('click', () => 
+  {
+    clickList();
+    console.log('안녕');    
+    listIndex[i].style.backgroundColor = "rgba(60, 53, 255, 0.466)";
+    listIndex[i].style.color = "rgba(234, 234, 242, 0.932)";
+  });
+}
 
-$(function(){
+function clickList() {
+    for(let i=0; i<listIndex.length; i++)
+    {
+      console.log('배고파');
+      listIndex[i].style.backgroundColor = "#030135";
+      listIndex[i].style.color = "rgba(174, 174, 255, 0.767);";
+    }
+}
 
-  $('li').click(function(){
-    $('li').removeClass()
-      $(this).addClass('on')
-  })
-})
+// {/* <style>
+// a.active-color { color:#000; }
+// </style> */}
+
+// // $("li").click(function() {
+// //     toggleClass(".active-color");
+// // });
+
+// $(function(){
+
+//   $('li').click(function(){
+//     $('li').removeClass()
+//       $(this).addClass('on')
+//   })
+// })

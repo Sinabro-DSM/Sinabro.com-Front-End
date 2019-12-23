@@ -1,3 +1,9 @@
+@media ( max-width: 1023px ) {
+  body {}
+}
+@media ( max-width: 767px ) {
+  body {}
+}
 body{
     margin: 0;
     padding: 0;
@@ -50,6 +56,7 @@ header > hr
     opacity: 0.5;
     width: 23px;
     height: 23px;
+    cursor: pointer;
 }
 
 .searchInputBox
@@ -101,7 +108,7 @@ header > hr
     color: rgba(174, 174, 255, 0.767);
 }
 
-.clubActiveList > a > li
+.list
 {
     margin-top: 5px;
     width : 238px;
@@ -111,7 +118,7 @@ header > hr
     font-size: 14px;
 }
 
-.clubActiveList > a > li:hover
+.list:hover
 {
     background-color: rgba(60, 53, 255, 0.466);
     color:rgba(234, 234, 242, 0.932);
