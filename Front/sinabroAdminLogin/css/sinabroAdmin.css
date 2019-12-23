@@ -32,7 +32,7 @@ body{
     margin-bottom: 0px;
 }
 
-.idBox{
+#idBox{
     width: 250px;
     height: 50px;
     text-align: left;
@@ -43,7 +43,7 @@ body{
     border-radius: 5px;
 }
 
-.pwBox{
+#pwBox{
     width: 250px;
     height: 50px;
     text-align: left;
