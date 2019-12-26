@@ -18,7 +18,5 @@ submitButton.addEventListener('click', () => {
     }).catch(res => {
         console.log(res);
         console.log("안됀다우, 동무");
-    })
+    });
 });
-
-
