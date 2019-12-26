@@ -3,8 +3,6 @@ const lg = document.querySelector(".loginBotton");
 lg.addEventListener('click', () => {
     const id = document.getElementById("idBox").value;
     const pw = document.getElementById("pwBox").value;
-    //const id = `<input>${text}`;
-    //const pw = `<input>${text}`;
     console.log(id, pw);
     axios({
         url: 'http://10.156.147.200:3000/admin',
