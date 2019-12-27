@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
 
   <link rel="stylesheet" href="./editor.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <title>Editor</title>
-
 </head>
 <body>    
     <section id="editor">
@@ -30,11 +30,16 @@
           <textarea id="content"></textarea>
         </div>
 
+        
+
         <div class="post-type">
+          <input type="file" id="get-button">사진</button>
           <button type="submit" id="submit-button">확인</button>
         </div>
 
       </article>
     </section>
 </body>
+
+<script src="./editor.js"></script>
 </html>

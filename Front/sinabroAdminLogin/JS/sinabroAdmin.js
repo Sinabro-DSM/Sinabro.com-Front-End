@@ -5,7 +5,7 @@ lg.addEventListener('click', () => {
     const pw = document.getElementById("pwBox").value;
     console.log(id, pw);
     axios({
-        url: 'http://10.156.147.200:3000/admin',
+        url: 'http://10.156.147.200:8000/admin',
         method: 'post',
         data: {
             id: id,
