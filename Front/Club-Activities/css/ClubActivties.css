@@ -7,7 +7,7 @@ body{
 #allContainer
 {
     display: inline-block;
-    padding: 0px 160px 0px 520px;
+    padding: 0px 160px 0px 430px;
     text-align: center;
 }
 
@@ -25,13 +25,95 @@ body{
 
 .activityBoxContainer
 {
-    margin-top: 100px;
     border: 1px solid black;
-    width: 700px;
-    height: 500px;
+    width: 900px;
+    height: 430px;
     display: inline-block;
 }
 
+.activityBoxContainer > .activityTopBox
+{
+    border: 1px solid red;
+    height: 200px;
+    width: 660px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.activityBoxContainer > .activityBottomBox
+{
+    border: 1px solid blue;
+    height: 200px;
+    width: 660px;
+    margin: 0 auto;
+    margin-top : 15px;
+    display: flex;
+}
+
+.activityTopLeftBox
+{
+    width: 200px;
+    height: 200px;
+    margin: 0px 20px 0px 0px;
+    background-color: #FFBC2D;
+    border-radius: 50px 0px 0px 0px;
+}
+
+.activityTopCenterBox
+{
+    width: 200px;
+    height: 200px;
+    margin: 0px 10px 0px 10px;
+    background-color: #FF6D6D;
+}
+
+.activityTopRightBox
+{
+    width: 200px;
+    height: 200px;
+    margin: 0px 0px 0px 20px;
+    background-color: #FF9F43;
+    border-radius: 0px 50px 0px 0px;
+}
+
+.activityBottomLeftBox
+{
+    width: 200px;
+    height: 200px;
+    margin: 0px 20px 0px 0px;
+    background-color: #5F9DF9;
+    border-radius: 0px 0px 0px 50px;
+}
+
+.activityBottomCenterBox
+{
+    width: 200px;
+    height: 200px;
+    margin: 0px 10px 0px 10px;
+    background-color: #CB25D1;
+}
+
+.activityBottomRightBox
+{
+    width: 200px;
+    height: 200px;
+    margin: 0px 0px 0px 20px;
+    background-color: #71D574;
+    border-radius: 0px 0px 50px 0px;
+}
+
+.topActivityText
+{
+    border: 1px solid red;
+    height: 140px;
+}
+
+.bottomActivityText
+{
+    border: 1px solid blue;
+    height: 140px;
+}
 .sinabroLogo
 {
     width: 260px;
