@@ -28,7 +28,7 @@ body{
     border: 1px solid black;
     width: 900px;
     height: 430px;
-    display: inline-block;
+    position: relative;
 }
 
 .activityBoxContainer > .activityTopBox
@@ -37,8 +37,8 @@ body{
     height: 200px;
     width: 660px;
     margin: 0 auto;
-    margin-bottom: 30px;
     display: flex;
+    position: relative;
 }
 
 .activityBoxContainer > .activityBottomBox
@@ -47,8 +47,9 @@ body{
     height: 200px;
     width: 660px;
     margin: 0 auto;
-    margin-top : 15px;
     display: flex;
+    position: relative;
+    margin-top: 30px;
 }
 
 .activityTopLeftBox
@@ -174,4 +175,23 @@ body{
     padding-left: 22px;
     font-size: 19px;
     color: rgba(230, 228, 231, 0.932);
+}
+
+.activityLogo
+{
+    border-radius: 36px;
+    width: 400px;
+    height: 120px;
+    margin: 0px 250px 0px 250px;
+    position: absolute;
+    top: 36%;
+    z-index: 1;
+    background-color: white;
+}
+
+.activityLogo > img
+{
+    margin: 20px;
+    width: 210px;
+    height: 70px;
 }
