@@ -56,6 +56,7 @@ body{
     margin: 0px 20px 0px 0px;
     background-color: #FFBC2D;
     border-radius: 50px 0px 0px 0px;
+    position: relative;
 }
 
 .activityTopLeftBox > p
@@ -69,9 +70,22 @@ body{
 .activityTopLeftBox > .iconBox
 {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     background-color: #FFD500;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    text-align: center;
+}
+
+.activityTopLeftBox > .iconBox > img
+{
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
 }
 
 .topLeftBoxTopText
@@ -90,6 +104,7 @@ body{
     height: 200px;
     margin: 0px 10px 0px 10px;
     background-color: rgba(255, 109, 109, 0.500);
+    position: relative;
 }
 
 .activityTopCenterBox > p
@@ -103,9 +118,18 @@ body{
 .activityTopCenterBox > .iconBox
 {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     background-color:#FF396F;
+    position: absolute;
+    bottom: 25%;
+    left: 33%;
+}
+
+.activityTopCenterBox > .iconBox > img
+{
+    width: 65px;
+    height: 65px;
 }
 
 .topCenterBoxTopText
@@ -125,6 +149,7 @@ body{
     margin: 0px 0px 0px 20px;
     background-color: #FF9F43;
     border-radius: 0px 50px 0px 0px;
+    position: relative;
 }
 
 .activityTopRightBox > p
@@ -139,9 +164,21 @@ body{
 .activityTopRightBox > .iconBox
 {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     background-color:#FFCA4F;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.activityTopRightBox > .iconBox > img
+{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10%;
+    right: 10%;
 }
 
 .activityBottomLeftBox
@@ -151,6 +188,7 @@ body{
     margin: 0px 20px 0px 0px;
     background-color: #5F9DF9;
     border-radius: 0px 0px 0px 50px;
+    position: relative;
 }
 
 .activityBottomLeftBox > p
@@ -164,14 +202,26 @@ body{
 .activityBottomLeftBox > .iconBox
 {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     background-color:#5C7BA3;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.activityBottomLeftBox > .iconBox > img
+{
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
 }
 
 .bottomLeftBoxTopText
 {
-    margin: 40px 0px 0px 20px;
+    margin: 110px 0px 0px 20px;
 }
 
 .bottomLeftBoxBottomText
@@ -185,6 +235,7 @@ body{
     height: 200px;
     margin: 0px 10px 0px 10px;
     background-color: #CB25D1;
+    position: relative;
 }
 
 .activityBottomCenterBox > p
@@ -198,14 +249,23 @@ body{
 .activityBottomCenterBox > .iconBox
 {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     background-color:#FF4FAD;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+}
+
+.activityBottomCenterBox > .iconBox > img
+{
+    width: 55px;
+    height: 55px;
 }
 
 .bottomCenterBoxTopText
 {
-    margin: 40px 0px 0px 0px;
+    margin: 120px 0px 0px 0px;
 }
 
 .bottomCenterBoxBottomText
@@ -220,6 +280,7 @@ body{
     margin: 0px 0px 0px 20px;
     background-color: #71D574;
     border-radius: 0px 0px 50px 0px;
+    position: relative;
 }
 
 .activityBottomRightBox > p
@@ -228,15 +289,27 @@ body{
     color: white;
     font-family: "나눔스퀘어라운드";
     text-align: right;
-    margin: 70px 20px 0px 0px;
+    margin: 150px 20px 0px 0px;
 }
 
 .activityBottomRightBox > .iconBox
 {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     background-color:#3CA154;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.activityBottomRightBox > .iconBox > img
+{
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 13%;
+    right: 15%;
 }
 
 .topActivityText
@@ -328,4 +401,3 @@ body{
     width: 210px;
     height: 70px;
 }
-
