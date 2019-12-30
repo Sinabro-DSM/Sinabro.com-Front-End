@@ -25,7 +25,6 @@ body{
 
 .activityBoxContainer
 {
-    border: 1px solid black;
     width: 900px;
     height: 430px;
     position: relative;
@@ -33,7 +32,6 @@ body{
 
 .activityBoxContainer > .activityTopBox
 {
-    border: 1px solid red;
     height: 200px;
     width: 660px;
     margin: 0 auto;
@@ -43,7 +41,6 @@ body{
 
 .activityBoxContainer > .activityBottomBox
 {
-    border: 1px solid blue;
     height: 200px;
     width: 660px;
     margin: 0 auto;
@@ -59,6 +56,25 @@ body{
     margin: 0px 20px 0px 0px;
     background-color: #FFBC2D;
     border-radius: 50px 0px 0px 0px;
+
+}
+
+.activityTopLeftBox > p
+{
+    font-size: 30px;
+    color: white;
+    font-family: "나눔스퀘어라운드";
+    text-align: left;
+}
+
+.topLeftBoxTopText
+{
+    margin: 15px 0px 0px 20px;
+}
+
+.topLeftBoxBottomText
+{
+    margin: 5px 0px 0px 20px;
 }
 
 .activityTopCenterBox
@@ -67,6 +83,24 @@ body{
     height: 200px;
     margin: 0px 10px 0px 10px;
     background-color: #FF6D6D;
+}
+
+.activityTopCenterBox > p
+{
+    font-size: 30px;
+    color: white;
+    font-family: "나눔스퀘어라운드";
+    text-align: right;
+}
+
+.topCenterBoxTopText
+{
+    margin: 15px 10px 0px 0px;
+}
+
+.topCenterBoxBottomText
+{
+    margin: 5px 10px 0px 0px;
 }
 
 .activityTopRightBox
@@ -78,6 +112,15 @@ body{
     border-radius: 0px 50px 0px 0px;
 }
 
+.activityTopRightBox > p
+{
+    font-size: 30px;
+    color: white;
+    font-family: "나눔스퀘어라운드";
+    text-align: right;
+    margin: 15px 20px 0px 0px;
+}
+
 .activityBottomLeftBox
 {
     width: 200px;
@@ -87,12 +130,48 @@ body{
     border-radius: 0px 0px 0px 50px;
 }
 
+.activityBottomLeftBox > p
+{
+    font-size: 30px;
+    color: white;
+    font-family: "나눔스퀘어라운드";
+    text-align: left;
+}
+
+.bottomLeftBoxTopText
+{
+    margin: 120px 0px 0px 20px;
+}
+
+.bottomLeftBoxBottomText
+{
+    margin: 5px 0px 0px 20px;
+}
+
 .activityBottomCenterBox
 {
     width: 200px;
     height: 200px;
     margin: 0px 10px 0px 10px;
     background-color: #CB25D1;
+}
+
+.activityBottomCenterBox > p
+{
+    font-size: 30px;
+    color: white;
+    font-family: "나눔스퀘어라운드";
+    text-align: center;
+}
+
+.bottomCenterBoxTopText
+{
+    margin: 120px 0px 0px 0px;
+}
+
+.bottomCenterBoxBottomText
+{
+    margin: 5px 0px 0px 0px;
 }
 
 .activityBottomRightBox
@@ -104,15 +183,22 @@ body{
     border-radius: 0px 0px 50px 0px;
 }
 
+.activityBottomRightBox > p
+{
+    font-size: 30px;
+    color: white;
+    font-family: "나눔스퀘어라운드";
+    text-align: right;
+    margin: 150px 20px 0px 0px;
+}
+
 .topActivityText
 {
-    border: 1px solid red;
     height: 140px;
 }
 
 .bottomActivityText
 {
-    border: 1px solid blue;
     height: 140px;
 }
 .sinabroLogo
