@@ -1,22 +1,33 @@
-const submitButton = document.querySelector("#submit-button");
-const btn = document.querySelector("#get-button");
 
+const submitButton = document.querySelector("#submit-button");
 
 submitButton.addEventListener('click', () => {
     const fd = new FormData();
-    fd.append("title", "title");
-    fd.append("content", "content");
-    fd.append("img", btn.files[0]);
-    fd.append("category", "category");
+    const getFileBtn = document.querySelector("#get-button");
+    const titleValue = document.querySelector("#_title").value.trim();
+    const contentValue = document.querySelector("#content").value;
+    const categoryValue = document.querySelector("#category").value;
+
+    // 예외 처리 필요 
+    // try {
+        
+    // } 
+    // catch {
+
+    // } 
+
+    fd.append("title", titleValue);
+    fd.append("content", contentValue);
+    fd.append("img", getFileBtn.files[0]);
+    fd.append("category", categoryValue);
 
     axios.post("http://10.156.147.200:8000/data", fd, {
         headers: {
             "Content-Type": "multipart/form-data",
         },
     }).then(res => {
-        console.log("성공");
+        console.log("success");
     }).catch(res => {
         console.log(res);
-        console.log("안됀다우, 동무");
     });
 });
