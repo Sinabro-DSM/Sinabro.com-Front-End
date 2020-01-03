@@ -7,7 +7,7 @@ body{
 #backgroundContainer
 {
     opacity:0.2;
-    background-color: rgb(126, 125, 125);
+    background-color: gray;
     position: relative;
 }
 
