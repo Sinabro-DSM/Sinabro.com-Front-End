@@ -1,0 +1,25 @@
+body {
+    background-color: #ebebeb;
+}
+
+#editor {
+    display: flex;
+    justify-content: center;
+}
+
+#editor-container {
+    margin-top: 2rem;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    padding: 3rem;
+    height: 50rem;
+    width: 45rem;
+
+    background-color: #ffffff;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}

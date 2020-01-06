@@ -1,4 +1,5 @@
 #main > * {
+    min-height: 100vh;
     width: 1080px;
     margin: 0 auto;
 }
@@ -26,9 +27,14 @@
     justify-content: center;
     color: #E4E4E4;
 }
-#main_header_category_wrap > li {
+a {
+    text-decoration: none;
+    color: black;
+}
+#main_header_category_wrap > a > li {
     margin-left: 16px;
     cursor: pointer;
+    color: #E4E4E4;
 }
 #main_screen_dot_wrap > ul {
     display: flex;
@@ -48,7 +54,10 @@
     cursor: pointer;
 }
 #main_explanation {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 120px 0;
 }
 #main_explanation > h1 {
@@ -79,9 +88,12 @@
     font-weight: 500;
 }
 #main_goal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     width: auto;
     min-width: 1080px;
-    padding: 80px 0;
     background-color: #F7F7F7;
 }
 #main_goal_wrap {
@@ -135,21 +147,30 @@
     width: 800px;
     margin: 0 auto;
     text-align: right;
-    padding-top: 16px;
+    padding-top: 32px;
 }
 #main_goal_more > button {
-    padding: 8px 16px;
+    margin-top: 16px;
     border: 0;
     border-radius: 32px;
-    color: white;
     background-color: #72BEDA;
     outline: none;
     cursor: pointer;
+    text-align: center;
+}
+#main_goal_more > button > a {
+    display: inline-block;
+    padding: 8px 16px;
+    color: white !important;
+    font-size: 20px;
 }
 #main_trace {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     width: auto;
     min-width: 1080px;
-    padding: 120px 0 80px;
     background-color: hsla(240, 71%, 99%, 0.5);
 }
 #main_trace_wrap {
@@ -244,9 +265,6 @@
     height: 16px;
     background-color: hsla(0, 10%, 35%, 0.6);
 }
-#main_post {
-    height: 500px;
-}
 #post_wrap > h1 {
     padding-bottom: 5px;
     font-size: 22px;
@@ -282,6 +300,7 @@
 }
 #main_footer {
     width: auto;
+    min-height: auto !important;
     min-width: 1080px;
     background-color: #5956DD;
     padding: 32px 0;

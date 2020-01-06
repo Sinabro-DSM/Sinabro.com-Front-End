@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="./editor.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Editor</title>
+</head>
+<body>    
+    <section id="editor">
+      <article id="editor-container">
+        <header>
+          <label for="category">카테고리</label>
+          <select name="category" id="category">
+            <option value="">카테고리선택</option>
+            <option value="lightingTalk">[라이트닝 토크]</option>
+            <option value="project">[프로젝트]</option>
+            <option value="algorithm">[알고리즘]</option>
+          </select>
+
+          <div class="title-container">
+            <label for="_title">제목</label>
+            <input type="text" id="_title"/>
+          </div>
+        </header>
+      
+        <div class="content-container">
+          <label for="content">내용</label>
+          <textarea id="content"></textarea>
+        </div>
+
+        
+
+        <div class="post-type">
+          <input type="file" id="get-button">사진</button>
+          <button type="submit" id="submit-button">확인</button>
+        </div>
+
+      </article>
+    </section>
+</body>
+
+<script src="./editor.js"></script>
+</html>
