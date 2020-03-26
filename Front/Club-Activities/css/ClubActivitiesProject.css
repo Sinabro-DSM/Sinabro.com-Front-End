@@ -9,6 +9,7 @@ body{
     opacity:0.2;
     background-color: gray;
     position: relative;
+    height: 100vh;
 }
 
 #introduceContainer > img
