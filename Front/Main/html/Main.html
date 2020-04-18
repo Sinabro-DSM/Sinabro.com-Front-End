@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sinabro.com</title>
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="../css/Main.css">
 </head>
 <body>
     <div id="root">
         <main id="main">
-            <!-- screen start --> 
             <section id="main_screen">
-                <!-- header start -->
                 <header id="main_header">
                     <div id="main_header_logo_wrap">
-                        <img src="../img/sinabro_logo.png" alt="Sinabro_logo">
+                        <img src="../../img/sinabro_logo.png" alt="Sinabro_logo">
                     </div>
                     <ul id="main_header_category_wrap">
-                        <a href="./../Club-Activities/html/ClubActivitiesMain.html"><li>동아리 활동</li></a>
-                        <a href="./../clubData/html/sinabroClubDataLightningTalk.html"><li>동아리 자료</li></a>
+                        <a href="../../Club-Activities/html/Main.html"><li>동아리 활동</li></a>
+                        <a href="../../clubData/html/LightningTalk.html"><li>동아리 자료</li></a>
                     </ul>
                 </header>
-                <!-- header end -->
                 <nav id="main_screen_dot_wrap">
                     <ul>
                         <li class="main_screen_dot"></li>
@@ -36,8 +33,6 @@
                     </ul>
                 </nav>
             </section>
-            <!-- screen end -->
-            <!-- explanation start -->
             <section id="main_explanation">
                 <h1>시나브로</h1>
                 <hr />
@@ -46,60 +41,51 @@
                 <p>대덕소프트웨어마이스터고등학교의 웹 동아리로,</p>
                 <p>모두가 함께 시나브로 성장해나가는 동아리입니다.</p>
             </section>
-            <!-- explanation end -->
-            <!-- goal start -->
             <section id="main_goal">
                 <div id="main_goal_wrap">
                     <h1 class="titles">우리의 목표</h1>
                     <p>다양한 활동을 통해서 <span>시나브로</span> 성장하는 동아리</p>
                     <div id="main_goal_card_wrap">
                         <div class="main_goal_card">
-                            <img src="../img/mentor.png" alt="멘토링">
+                            <img src="../../img/mentor.png" alt="멘토링">
                             <h3>멘토링</h3>
                             <p>분야별로 1:1 멘토링을 진행합니다.</p>
                         </div>
                         <div class="main_goal_card">
-                            <img src="../img/education.png" alt="라이트닝 토크">
+                            <img src="../../img/education.png" alt="라이트닝 토크">
                             <h3>라이트닝 토크</h3>
                             <p>매주마다 2명씩 라이트닝 토크를 진행합니다.</p>
                         </div>
                         <div class="main_goal_card">
-                            <img src="../img/light-bulb.png" alt="동아리 프로젝트">
+                            <img src="../../img/light-bulb.png" alt="동아리 프로젝트">
                             <h3>동아리 프로젝트</h3>
                             <p>같은 학년끼리 동아리 프로젝트를 진행하면서 협업을 배웁니다.</p>
                         </div>
                     </div>
                     <div id="main_goal_more">
                         <button>
-                            <a href="../Club-Activities/html/ClubActivitiesMain.html">더 알아보기</a>
+                            <a href="../../Club-Activities/html/Main.html">더 알아보기</a>
+                            <a href="../../clubData/html/Algorithm.html"></a>
                         </button>
                     </div>
                 </div>
             </section>
-            <!-- goal end -->
-            <!-- trace start -->
             <section id="main_trace">
                 <div id="main_trace_wrap">
                     <h1 class="titles">우리들의 발자취</h1>
                     <div id="main_trace_chart">
                         <!-- Todo -->
-                        <img src="../img/our_trace.png" alt="our_trace_img">
+                        <img src="../../img/our_trace.png" alt="our_trace_img">
                     </div>
                 </div>
             </section>
-            <!-- trace end -->
-            <!-- member start -->
             <section id="main_members">
                 <h1 class="titles">구성원</h1>
                 <p>동아리를 구성하는 사람들</p>
-                <!-- memeberWrap -->
                 <ul id="main_member_wrap"></ul>
             </section>
-            <!-- member end -->
-            <!-- hall of fame start -->
             <section id="main_hall_of_fame">
                 <h1 class="titles">명예의 전당</h1>
-                <!-- hallOfFameCardWrap -->
                 <ul id="hall_of_fame_card_wrap">
                     <ul class="hall_of_fame_card hall_of_fame_card_last">
                         <li class="hall_of_fame_dot"></li>
@@ -108,8 +94,6 @@
                     </ul>
                 </ul>
             </section>
-            <!-- hall of fame end -->
-            <!-- post start -->
             <section id="main_post">
                 <div id="post_wrap">
                     <h1>추천 게시물</h1>
@@ -117,13 +101,11 @@
                     <div id="post_posted_wrap"></div>
                 </div>
             </section>
-            <!-- post end -->
-            <!-- footer start -->
             <footer id="main_footer">
                 <div id="main_footer_wrap">
                     <div id="main_footer_top">
                         <div id="footer_about">
-                            <img src="../img/sinabro_logo.png" alt="sinabro_logo">
+                            <img src="../../img/sinabro_logo.png" alt="sinabro_logo">
                             <p>"시나브로"는 모르는 사이에 조금씩 조금씩 성장해나가는 대덕SW마이스터고등학교의 웹 동아리입니다.</p>
                         </div>
                         <div id="footer_developer">
@@ -161,9 +143,8 @@
                     </div>
                 </div>
             </footer>
-            <!-- footer end -->
         </main>
     </div>
-    <script src="Main.js"></script>
+    <script src="../js/Main.js"></script>
 </body>
 </html>

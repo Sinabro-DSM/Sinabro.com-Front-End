@@ -12,13 +12,10 @@ lg.addEventListener('click', () => {
             password: pw
         }
     }).then(response => {
-        location.replace('file:///C:/Users/user/Desktop/시나브로/project/sinabro-Front/Front/Main/Main.html');
+        window.location.href = "../../Main/html/Main.html"
         console.log(response);
     }).catch(response => {
         alert('틀렸어용!');
         console.log(response);
     });
 });
-
-
-  
