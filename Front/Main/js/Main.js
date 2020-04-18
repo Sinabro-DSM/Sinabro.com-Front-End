@@ -50,18 +50,18 @@ const olderMembers = [
 
 const postData = [
     {
-        "url": "../clubData/html/sinabroClubDataAlgorithm.html", "img": "", "alt": "", "title": "title", "content": "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent",
+        "url": "../../clubData/html/Algorithm.html", "img": "", "alt": "", "title": "title", "content": "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent",
     }, {
-        "url": "../clubData/html/sinabroClubDataLightningTalk.html", "img": "", "alt": "", "title": "title", "content": "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent",
+        "url": "../../clubData/html/LightningTalk.html", "img": "", "alt": "", "title": "title", "content": "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent",
     }, {
-        "url": "../clubData/html/sinabroClubDataProject.html", "img": "", "alt": "", "title": "title", "content": "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent",
+        "url": "../../clubData/html/Project.html", "img": "", "alt": "", "title": "title", "content": "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent",
     }
 ];
 
 
 const showMembers = (member) => {
     const li = `<li>
-        <img src="../img/${member.img}" alt="${member.alt}">
+        <img src="../../img/${member.img}" alt="${member.alt}">
         <p>${member.name}</p>
         <p>${member.major}</p>
     </li>`;
@@ -70,7 +70,7 @@ const showMembers = (member) => {
 
 const showHallOfFame = (data) => {
     const li = `<li class="hall_of_fame_card">
-        <img src="../img/${data.img}" alt="${data.alt}">
+        <img src="../../img/${data.img}" alt="${data.alt}">
         <div>
             <p>시나브로 ${data.phase}기</p>
             <h3>${data.name}</h3>
