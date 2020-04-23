@@ -3,6 +3,14 @@ const studyData = [
         "title": "제목",
         "content": "내용",
         "uploadDate": "2019/01/01",
+    }, {
+        "title": "제목",
+        "content": "내용",
+        "uploadDate": "2019/01/01",
+    }, {
+        "title": "제목",
+        "content": "내용",
+        "uploadDate": "2019/01/01",
     }
 ];
 
@@ -15,4 +23,8 @@ const studyFrame = ({ title, content, uploadDate }) => {
     return study;
 };
 
-document.getElementById("studySection").insertAdjacentHTML("beforeend", studyFrame(studyData[0]));
+const section = document.getElementById("studySection");
+
+studyData.map((data) => {
+    section.insertAdjacentHTML("beforeend", studyFrame(data))
+});
