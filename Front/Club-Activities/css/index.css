@@ -4,6 +4,11 @@ body{
     height: 100vh;
 }
 
+a 
+{
+    text-decoration: none;
+}
+
 #introduceContainer {
     position: absolute;
     width: 100vw;
@@ -12,11 +17,12 @@ body{
 
 #allContainer
 {
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0px 0px 0px 260px;
     text-align: center;
-    width: 80vw;
+    /* width: 80vw; */
     height: 100vh;
 }
 
@@ -66,30 +72,6 @@ body{
     line-height: 1.5;
 }
 
-a 
-{
-    text-decoration: none;
-}
-
-/* #allContainer
-{
-    display: inline-block;
-    padding: 0px 160px 0px 430px;
-    text-align: center;
-} */
-
-#asideNavContainer
-{
-    position: fixed;
-    top:0;
-    left: 0;
-    margin: 0px;
-    width: 260px;
-    height: 100vh;
-    border: solid 1px #707070;
-    background-color: #030135;
-}
-
 .activityBoxContainer
 {
     display: inline-block;
@@ -97,6 +79,14 @@ a
     height: 430px;
     margin-bottom: 100px;
     position: relative;
+}
+
+.activityBoxContainer > article > div {
+    transition: 0.5s;
+}
+
+.activityBoxContainer > article > div:hover {
+    transform: scale(1.1);
 }
 
 .activityBoxContainer > article > div {
@@ -398,6 +388,18 @@ a
 .topActivityText,.bottomActivityText
 {
     height: 140px;
+}
+
+#asideNavContainer
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    margin: 0px;
+    width: 260px;
+    height: 100vh;
+    border: solid 1px #707070;
+    background-color: #030135;
 }
 
 .sinabroLogo
