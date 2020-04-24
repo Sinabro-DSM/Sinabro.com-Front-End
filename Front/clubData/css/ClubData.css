@@ -1,164 +1,157 @@
-@media ( max-width: 1023px ) {
-    body {}
-  }
-  @media ( max-width: 767px ) {
-    body {}
-  }
-  body{
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-  }
-  
-  header
-  {
-      padding: 100px 0px 0px 0px; 
-      text-align: center;
-  }
-  
-  header > h1
-  {
-      margin: 0 auto;
-  }
-  
-  #allContainer
-  {
-      display: inline-block;
-      padding: 0px 0px 0px 220px;
-      width: 90vw;
-      height: 100vh;
-      text-align: center;
-  }
-  
-  #studySection
-  {
-      display: inline-block;
-      text-align: left;
-  }
-  
-  header > hr
-  {
-      text-align: center;
-      width: 50px;
-      background-color: #5956DD;
-      border: 1px solid #5956DD;
-  }
-  
-  .searchInputContainer
-  {
-      width: 240px;
-      height: 33px;
-      display: flex;
-      align-items: center;
-      border: 1px solid #707070;
-      margin: 50px 0px 40px 956px;
-  }
-  
-  .searchInputContainer > img
-  {
-      opacity: 0.5;
-      width: 23px;
-      height: 23px;
-      cursor: pointer;
-  }
-  
-  .searchInputBox
-  {
-      padding: 5px;
-      width: 200px;
-      border: none;
-  }
-  
-  #asideNavContainer
-  {
-      position: fixed;
-      top:0;
-      left: 0;
-      margin: 0px;
-      width: 260px;
-      height: 100vh;
-      border: solid 1px #707070;
-      background-color: #030135;
-  }
-  
-  .sinabroLogo
-  {
-      width: 260px;
-      object-fit: contain;
-      display: block;
-      margin: 10px 0px 35px 0px;
-  }
-  
-  .clubActiveList
-  {
-      list-style: none;
-      width:240px;
-      opacity: 0.85;
-      font-family: NotoSansKR;
-      font-size: 15px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      text-align: left;
-      color: rgba(174, 174, 255, 0.767);
-      padding: 0;
-      margin: 0px 0px 40px 0px;
-  }
-  
-  .clubActiveList > a
-  {
-      text-decoration: none;
-      color: rgba(174, 174, 255, 0.767);
-  }
-  
-  .list
-  {
-      margin-top: 5px;
-      width : 238px;
-      height: 22px;
-      padding-top :3px;
-      padding-left: 22px;
-      font-size: 14px;
-  }
-  
-  .list:hover
-  {
-      background-color: rgba(60, 53, 255, 0.466);
-      color:rgba(234, 234, 242, 0.932);
-  }
-  
-  .clubActiveList > a > li.on
-  {
-      background-color: rgba(60, 53, 255, 0.466);
-      color:rgba(234, 234, 242, 0.932);
-  }
-  
-  .clubActiveList > h3
-  {
-      margin: 5px 0px 15px 0px;
-      width : 238px;
-      height: 22px;
-      padding-left: 22px;
-      color: rgba(230, 228, 231, 0.932);
-      font-size: 19px;
-  }
-  
-  .contentsContainer
-  {
-      width: 880px;
-      height: 150px;
-      border-bottom: 1px solid #707070;
-  }
-  
-  .contentsContainer > h3:hover
-  {
-      cursor: pointer;
-      text-decoration: underline;
-  }
-  
-  .contentsContainer > p:hover
-  {
-      cursor: pointer;
-      text-decoration: underline;
-  }
-  
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header
+{
+    padding: 100px 0px 0px 0px; 
+    text-align: center;
+}
+
+header > h1
+{
+    margin: 0 auto;
+}
+
+#allContainer
+{
+    display: inline-block;
+    padding: 0px 0px 0px 262px;
+    /* width: 90vw; */
+    height: 100vh;
+    text-align: center;
+}
+
+#studySection
+{
+    display: inline-block;
+    text-align: left;
+}
+
+header > hr
+{
+    text-align: center;
+    width: 50px;
+    background-color: #5956DD;
+    border: 1px solid #5956DD;
+}
+
+.searchInputContainer
+{
+    width: 240px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #707070;
+    margin: 50px 0px 40px 956px;
+}
+
+.searchInputContainer > img
+{
+    opacity: 0.5;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.searchInputBox
+{
+    padding: 5px;
+    width: 200px;
+    border: none;
+}
+
+#asideNavContainer
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    margin: 0px;
+    width: 260px;
+    height: 100vh;
+    border: solid 1px #707070;
+    background-color: #030135;
+}
+
+.sinabroLogo
+{
+    width: 260px;
+    object-fit: contain;
+    display: block;
+    margin: 10px 0px 35px 0px;
+}
+
+.clubActiveList
+{
+    list-style: none;
+    width:240px;
+    opacity: 0.85;
+    font-family: NotoSansKR;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: left;
+    color: rgba(174, 174, 255, 0.767);
+    padding: 0;
+    margin: 0px 0px 40px 0px;
+}
+
+.clubActiveList > a
+{
+    text-decoration: none;
+    color: rgba(174, 174, 255, 0.767);
+}
+
+.list
+{
+    margin-top: 5px;
+    width : 238px;
+    height: 22px;
+    padding-top :3px;
+    padding-left: 22px;
+    font-size: 14px;
+}
+
+.list:hover
+{
+    background-color: rgba(60, 53, 255, 0.466);
+    color:rgba(234, 234, 242, 0.932);
+}
+
+.clubActiveList > a > li.on
+{
+    background-color: rgba(60, 53, 255, 0.466);
+    color:rgba(234, 234, 242, 0.932);
+}
+
+.clubActiveList > h3
+{
+    margin: 5px 0px 15px 0px;
+    width : 238px;
+    height: 22px;
+    padding-left: 22px;
+    color: rgba(230, 228, 231, 0.932);
+    font-size: 19px;
+}
+
+.contentsContainer
+{
+    width: 880px;
+    height: 150px;
+    border-bottom: 1px solid #707070;
+}
+
+.contentsContainer > h3:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.contentsContainer > p:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
