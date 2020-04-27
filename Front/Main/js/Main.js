@@ -37,6 +37,28 @@ const showBoard = (data) => {
     main.postedWrap.insertAdjacentHTML("beforeend", div);
 };
 
+const onClickScreenContent = (num) => {
+    fetch("../json/main.json").then((res) => res.json()).then((json) => {
+        const url = json.imgUrl[num];
+        main.screen.style.backgroundImage = `url("${url}")`
+    })
+};
+
+window.onload = () => {
+    fetch("../json/main.json").then((res) => res.json()).then((json) => {
+        json.members.map(showMembers);
+        json.recommendBoard.map(showBoard);
+        json.seniorMembers.map(showHallOfFame);
+        json.imgUrl.forEach((url, num) => {
+            const dotForm = `<li class="main_screen_dot" onclick="onClickScreenContent(${num})"></li>`;
+            main.dotWrap.insertAdjacentHTML("beforeend", dotForm);
+        });
+        main.screen.style.backgroundImage = `url("${json.imgUrl[0]}")`
+    })
+};
+
+
+
 // const listenScroll = () => {
 //     let position = window.scrollY;
 //     return (document.addEventListener("scroll", () => {
@@ -50,24 +72,4 @@ const showBoard = (data) => {
 //     }));
 // };
 
-const onClickScreenContent = (num) => {
-    fetch("../json/main.json").then((res) => res.json()).then((json) => {
-        const url = json.imgUrl[num];
-        main.screen.style.backgroundImage = `url("${url}")`
-    })
-};
-
-window.onload = () => {
-    // (listenScroll)();
-
-    fetch("../json/main.json").then((res) => res.json()).then((json) => {
-        json.members.map(showMembers);
-        json.recommendBoard.map(showBoard);
-        json.seniorMembers.map(showHallOfFame);
-        json.imgUrl.forEach((url, num) => {
-            const dotForm = `<li class="main_screen_dot" onclick="onClickScreenContent(${num})"></li>`;
-            main.dotWrap.insertAdjacentHTML("beforeend", dotForm);
-        });
-        main.screen.style.backgroundImage = `url("${json.imgUrl[0]}")`
-    })
-};
+// (listenScroll)();

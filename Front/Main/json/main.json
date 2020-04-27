@@ -137,6 +137,7 @@
     ],
     "imgUrl": [
         "https://lh3.googleusercontent.com/proxy/QINKmsUwWjrGbDzV1cHIIfgfM0-Z2f503hR6nmLZnunTicag8_fLB9SCqKyf15fLroMyPdC6ZBhosIJWEKkW2Eqgh7uXhrvwIXXJsm2osqle",
-        "https://www.bikeselling.co.kr/img/cates/lam_top.jpg"
+        "https://www.bikeselling.co.kr/img/cates/lam_top.jpg",
+        "../../img/test123.png"
     ]
 }
