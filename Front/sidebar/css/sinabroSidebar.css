@@ -6,9 +6,11 @@ body{
 
 #asideNavContainer
 {
-    width: 260px;
-    height: 100vh;
-    border: solid 1px #707070;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    border: 0 !important;
     background-color: #030135;
 }
 
@@ -23,17 +25,12 @@ body{
 .clubActiveList
 {
     list-style: none;
-    width:240px;
     opacity: 0.85;
     font-family: NotoSansKR;
     font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     text-align: left;
     color: rgba(174, 174, 255, 0.767);
     padding: 0;
-    margin: 0px 0px 40px 0px;
 }
 
 .clubActiveList > a
@@ -45,7 +42,6 @@ body{
 .clubActiveList > a > li
 {
     margin-top: 5px;
-    width : 238px;
     height: 22px;
     padding-top :3px;
     padding-left: 22px;
@@ -67,9 +63,31 @@ body{
 .clubActiveList > h3
 {
     margin: 5px 0px 15px 0px;
-    width : 238px;
     height: 22px;
     padding-left: 22px;
     color: rgba(230, 228, 231, 0.932);
     font-size: 19px;
+}
+
+@media all and (max-width: 1024px) {
+    #asideNavContainer {
+        width: 130px;
+    }
+    .sinabroLogo {
+        width: 100%;
+        padding: 0;
+    }
+    .clubActiveList, .clubActiveList > h3, .clubActiveList > a > li {
+        font-size: 8px;
+    }
+    .clubActiveList {
+        margin: 0;
+    }
+    .clubActiveList > h3 {
+        margin: 0;
+        height: auto;
+    }
+    .clubActiveList > a > li {
+        height: auto;
+    }
 }

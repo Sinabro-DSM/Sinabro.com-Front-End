@@ -4,42 +4,59 @@ body{
     height: 100vh;
 }
 
+a 
+{
+    text-decoration: none;
+}
+
 #introduceContainer {
     position: absolute;
     width: 100%;
     height: 100vh;
 }
 
+#allContainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 260px;
+    text-align: center;
+    /* width: 80vw; */
+    height: 100vh;
+}
+
 #backgroundContainer
 {
-    position: absolute;
+    position: fixed;
     width: calc(100% - 260px);
     height: 100vh;
     background-color: rgba(128, 128, 128, 0.8);
-    margin-left: 260px;
+    padding-left: 260px;
     overflow: hidden;
     z-index: 2;
     cursor: pointer;
 }
 
+#introduceContent {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #introduceContent > img
 {
-    position: absolute;
-    top: 20%;
-    left: 25%;
-    width: 455px;
-    height: 459px;
+    height: 40%;
+    align-self: center;
     z-index: 10;
 }
 
 .introduceTextBox
 {
-    width: 375px;
-    height: 432px;
-    position: absolute;
-    top: 25%;
-    right: 14%;
-    z-index: 100;
+    width: 20%;
+    margin-left: 10px;
+    z-index: 5;
     font-family: "Roboto";
 }
 
@@ -56,35 +73,21 @@ body{
     line-height: 1.5;
 }
 
-a 
-{
-    text-decoration: none;
-}
-
-#allContainer
-{
-    display: inline-block;
-    padding: 0px 160px 0px 430px;
-    text-align: center;
-}
-
-#asideNavContainer
-{
-    position: fixed;
-    top:0;
-    left: 0;
-    margin: 0px;
-    width: 260px;
-    height: 100vh;
-    border: solid 1px #707070;
-    background-color: #030135;
-}
-
 .activityBoxContainer
 {
-    width: 900px;
-    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
+}
+
+.activityBoxContainer > article > div {
+    transition: 0.5s;
+}
+
+.activityBoxContainer > article > div:hover {
+    transform: scale(1.1);
 }
 
 .activityBoxContainer > article > div {
@@ -118,7 +121,7 @@ a
 {
     width: 200px;
     height: 200px;
-    margin: 10px 20px 0px 0px;
+    margin: 0px 20px 0px 0px;
     background-color: #FFBC2D;
     border-radius: 50px 0px 0px 0px;
     position: relative;
@@ -155,7 +158,7 @@ a
 
 .topLeftBoxTopText
 {
-    margin: 15px 0px 0px 20px;
+    margin: 20px 0px 0px 20px;
     padding-top: 15px;
 }
 
@@ -200,7 +203,7 @@ a
 
 .topCenterBoxTopText
 {
-    margin: 15px 10px 0px 0px;
+    margin: 20px 10px 0px 0px;
     padding-top: 15px;
 }
 
@@ -225,7 +228,7 @@ a
     color: white;
     font-family: "나눔스퀘어라운드";
     text-align: right;
-    margin: 15px 20px 0px 0px;
+    margin: 20px 20px 0px 0px;
     padding-top: 15px;
 }
 
@@ -388,74 +391,12 @@ a
     height: 140px;
 }
 
-.sinabroLogo
-{
-    width: 260px;
-    object-fit: contain;
-    display: block;
-    margin: 10px 0px 35px 0px;
-}
-
-.clubActiveList
-{
-    list-style: none;
-    width:240px;
-    opacity: 0.85;
-    font-family: NotoSansKR;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    text-align: left;
-    color: rgba(174, 174, 255, 0.767);
-    padding: 0;
-    margin: 0px 0px 40px 0px;
-}
-
-.clubActiveList > a
-{
-    text-decoration: none;
-    color: rgba(174, 174, 255, 0.767);
-}
-
-.list
-{
-    margin-top: 5px;
-    width : 238px;
-    height: 22px;
-    padding-top :3px;
-    padding-left: 22px;
-    font-size: 14px;
-}
-
-.list:hover
-{
-    background-color: rgba(60, 53, 255, 0.466);
-    color:rgba(234, 234, 242, 0.932);
-}
-
-.clubActiveList > a > li.on
-{
-    background-color: rgba(60, 53, 255, 0.466);
-    color:rgba(234, 234, 242, 0.932);
-}
-
-.clubActiveList > h3
-{
-    margin: 5px 0px 15px 0px;
-    width : 238px;
-    height: 22px;
-    padding-left: 22px;
-    font-size: 19px;
-    color: rgba(230, 228, 231, 0.932);
-}
-
 .activityLogo
 {
     border-radius: 36px;
     width: 400px;
     height: 100px;
-    margin: 0px 250px 0px 250px;
+    /* margin: 0px 150px 0px 150px; */
     position: absolute;
     top: 36%;
     z-index: 1;
@@ -467,4 +408,41 @@ a
     margin: 15px;
     width: 210px;
     height: 70px;
+}
+
+@media all and (max-width: 1024px) {
+    #allContainer {
+        display: block;
+        padding-left: 130px;
+    }
+    .activityBoxContainer {
+        flex-direction: row;
+    }
+    .activityBoxContainer > article {
+        display: block !important;
+        width: auto !important;
+        height: auto !important;
+        margin: 0 15px !important;
+        padding: 20px;
+    }
+    .activityBoxContainer > article:nth-child(2) {
+        display: none !important;
+    }
+    .activityBoxContainer > article > div {
+        margin: 0;
+        padding: 0;
+        border-radius: 12px;
+    }
+    #backgroundContainer {
+        padding-left: 130px;
+        width: calc(100% - 130px);
+    }
+    #introduceContent > img {
+        height: 40%;
+    }
+    .introduceTextBox {
+        width: auto;
+        margin-left: 10px;
+        font-size: 1rem;
+    }
 }
