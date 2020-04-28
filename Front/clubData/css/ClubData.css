@@ -4,12 +4,12 @@ body{
     height: 100vh;
 }
 
-header
+#categoryName
 {
     text-align: center;
 }
 
-header > h1
+#categoryName > h1
 {
     margin: 0 auto;
 }
