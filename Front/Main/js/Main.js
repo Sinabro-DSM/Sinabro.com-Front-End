@@ -42,6 +42,12 @@ const onClickScreenContent = (num) => {
         const url = json.imgUrl[num];
         main.screen.style.backgroundImage = `url("${url}")`
     })
+    const target = event.target;
+    const dots = target.parentNode.childNodes;
+    [...dots].map((child) => {
+        child.classList.remove("main_screen_dot_selected");
+    });
+    target.classList.add("main_screen_dot_selected");
 };
 
 window.onload = () => {
@@ -54,6 +60,7 @@ window.onload = () => {
             main.dotWrap.insertAdjacentHTML("beforeend", dotForm);
         });
         main.screen.style.backgroundImage = `url("${json.imgUrl[0]}")`
+        document.querySelectorAll(".main_screen_dot")[0].classList.add("main_screen_dot_selected");
     })
 };
 
