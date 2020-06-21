@@ -12,7 +12,7 @@ body{
 }
 
 .loginContainer{
-    background-color: #f3f3f3;;
+    background-color: #f8f8f8f5;;
     position: relative;
     width: 380px;
     height: 510px;
@@ -21,6 +21,31 @@ body{
     text-align: center;
     margin: auto;
     padding: 0px;
+}
+
+.decorationButtons
+{
+    display: flex;
+    margin: 10px;
+}
+
+.decorationButtons > div
+{
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.decorationButtons > div:nth-child(2)
+{
+    background-color: yellow;
+}
+
+.decorationButtons > div:nth-child(3)
+{
+    background-color: rgb(161, 224, 161);
 }
 
 .loginTitle{
@@ -54,7 +79,7 @@ body{
     border-radius: 5px;
 }
 
-.loginBotton{    
+.loginButton{    
     width: 270px;
     height: 50px;
     line-height: 50px;
